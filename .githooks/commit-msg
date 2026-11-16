@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Conventional commits: type(scope)?: subject
+re='^(feat|fix|chore|docs|refactor|test|ci|build|perf|revert)(\([a-z0-9-]+\))?!?: .+'
+head -1 "$1" | grep -Eq "$re" || { echo "commit message must match: type(scope): subject"; exit 1; }

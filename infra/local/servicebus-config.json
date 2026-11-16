@@ -1,0 +1,5 @@
+{ "UserConfig": { "Namespaces": [ { "Name": "sbemulatorns",
+  "Queues": [
+    { "Name": "runs",      "Properties": { "LockDuration": "PT2M", "MaxDeliveryCount": 5, "DeadLetteringOnMessageExpiration": true, "DefaultMessageTimeToLive": "P1D", "RequiresDuplicateDetection": true, "DuplicateDetectionHistoryTimeWindow": "PT10M" } },
+    { "Name": "approvals", "Properties": { "LockDuration": "PT1M", "MaxDeliveryCount": 5, "DeadLetteringOnMessageExpiration": true, "DefaultMessageTimeToLive": "P7D" } }
+  ], "Topics": [] } ], "Logging": { "Type": "File" } } }
