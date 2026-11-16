@@ -1,0 +1,27 @@
+# secrets
+.env
+*.local
+infra/local/secrets/*
+!infra/local/secrets/.gitkeep
+
+# Java / Maven
+target/
+*.class
+.mvn/wrapper/maven-wrapper.jar
+
+# Node
+node_modules/
+dist/
+
+# Python
+__pycache__/
+.venv/
+*.pyc
+evals/results/*.json
+!evals/results/.gitkeep
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.DS_Store
